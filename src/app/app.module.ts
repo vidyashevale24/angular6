@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes , RouterModule, Router} from '@angular/router';
 
-const r: Routes[
+const r: Routes=[
   {path: '', component: HomeComponent},
   {path: 'Users', component: UsersComponent},
   {path: 'Login', component: LoginComponent},
@@ -14,6 +14,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RegisterComponent } from './register/register.component';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
