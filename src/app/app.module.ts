@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes , RouterModule, Router} from '@angular/router';
+import { FormsModule , ReactiveFormsModule} from '@angular/forms';
 
 const r: Routes=[
   {path: '', component: HomeComponent},
@@ -28,7 +29,9 @@ import { UsersComponent } from './users/users.component';
   ],
   imports: [
     BrowserModule,
-    RouterModule .forRoot(r)
+    RouterModule .forRoot(r),
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
